@@ -25,6 +25,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 Mock-Up
 
 ## Installation
+npm install connect-session-sequelize
 npm install express
 mongoose
 MongoDB
