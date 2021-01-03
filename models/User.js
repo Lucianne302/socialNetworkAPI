@@ -10,11 +10,14 @@ const UserSchema = new Schema(
       required: true,
       trim: true
     },
-//     createdBy: {
-//       type: String,
-//       required: true,
-//       trim: true
-//     },
+    email: {
+      type: String,
+    //   required: true,
+      unique: true,
+      required: 'Email address is required',
+      validate: [validateEmail, 'Please fill a valid email address'],
+      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
+    },
 //     createdAt: {
 //       type: Date,
 //       default: Date.now,
@@ -26,6 +29,14 @@ const UserSchema = new Schema(
 //       enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
 //       default: 'Large'
 //     },
+    thoughts: [],
+    comments: [
+      {
+        type: Schema.ObjectId,
+        ref: 'Thought'
+      }
+    ]
+  },
 //     toppings: [],
 //     comments: [
 //       {
@@ -48,10 +59,11 @@ const UserSchema = new Schema(
 //   //return this.comments.length;
 //   return this.comments.reduce(
 //     (total, comment) => total+ comment.replies.length+1,0)
-});
+//}
+);
 
-// create the Pizza model using the PizzaSchema
+// create the User model using the UserSchema
 const User = model('User', UserSchema);
 
-// export the Pizza model
+// export the User model
 module.exports = User;

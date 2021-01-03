@@ -1,14 +1,18 @@
 # socialNetworkAPI
 
 ## Table of Contents
+* [License](#license)
 * [Description](#description)
 * [Installation](#installation)
 * [Credits](#credits)
 * [Contributors](#contributors)
-* [Resources/links] (#Resources/links)
+* [Resources/links] (#resources/links)
 * [Tests](#tests) 
 * [Questions](#questions) 
 * [Video] (#video)
+
+## License
+ISC
 
 ## Description
 A social media startup WANTS an API for a social network that uses a NoSQL database SO THAT their website can handle large amounts of unstructured data
@@ -40,12 +44,16 @@ Collaborator: Stuart Fraser
 ## Resources/links:
 Module/lesson 18: NoSQL 
 NPM Express, https://www.npmjs.com/package/express-session 
+Understanding 'unique' in Mongoose, https://masteringjs.io/tutorials/mongoose/unique 
+Mongoose's matching validation, https://mongoosejs.com/docs/validation.html 
+Mongoose - validate email syntax, https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax 
+
 
 ## Test
 tested applications adding console logs. Used Insomnia to test get, posts, put and delete environments.  
 
 ## Questions
 GitHub Username: Lucianne302 
-GitHub Profile Link: https://github.com/Lucianne302/techBlog.git
+GitHub Profile Link: https://github.com/Lucianne302/
 
 ## Video
