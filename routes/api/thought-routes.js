@@ -5,8 +5,11 @@ const {
     getThoughtById,
     updateThoughtById, 
     removeThoughtById, 
+    //removeThought,
     addReaction, 
-    removeReactionById
+    //removeReaction,
+    removeReactionById, 
+    addThought
 } = require('../../controllers/thought-controller');
 
 // Set up GET all and POST at /api/Thought
@@ -14,12 +17,13 @@ router
   .route('/')
   .get(getAllThought)
   .get(getThoughtById)
-  //.post(addThought);
+  .post(addThought);
 
 // /api/comments/<pizzaId>
 // /api/thought/<thoughtId>
 router
     .route('/:thoughtId')
+    .get(getThoughtById)
     //.post(addThought)
     .put(updateThoughtById)
     .delete(removeThoughtById);
@@ -27,18 +31,18 @@ router
 // /api/comments/<pizzaId>/<commentId>
 // /api/comments/<userId>/<thoughtId>
 router
-    .route('/:userId/:thoughtId')
-    .put(addReaction)
-    .delete(removeThought);
+    .route('/:thoughtId/:thoughtId')
+    //.put(addReaction)
+    //.delete(removeThought);
 
 router
     .route('/:thoughtId/:reactions')
     .post(addReaction)
     .put(addReaction)
-    .delete(removeReaction);
+    //.delete(removeReaction);
 
 router
-    .route('/:reactionId')
+    .route('/:thoughtId/:reactions/:reactionId')
     .delete(removeReactionById);
 
 module.exports = router;
