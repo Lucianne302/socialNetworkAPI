@@ -47,6 +47,8 @@ NPM Express, https://www.npmjs.com/package/express-session
 Understanding 'unique' in Mongoose, https://masteringjs.io/tutorials/mongoose/unique 
 Mongoose's matching validation, https://mongoosejs.com/docs/validation.html 
 Mongoose - validate email syntax, https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax 
+Mongoose version key, https://stackoverflow.com/questions/12495891/what-is-the-v-field-in-mongoose 
+Mongoose Delete Many, https://www.geeksforgeeks.org/mongoose-deletemany-function/ 
 
 
 ## Test
