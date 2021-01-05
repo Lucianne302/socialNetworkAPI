@@ -22,7 +22,7 @@ router
 // /api/comments/<pizzaId>
 // /api/thought/<thoughtId>
 router
-    .route('/:thoughtId')
+    .route('/:id')
     .get(getThoughtById)
     //.post(addThought)
     .put(updateThoughtById)
@@ -30,19 +30,19 @@ router
 
 // /api/comments/<pizzaId>/<commentId>
 // /api/comments/<userId>/<thoughtId>
-router
-    .route('/:thoughtId/:thoughtId')
+// router
+//     .route('/:thoughtId/:thoughtId')
     //.put(addReaction)
     //.delete(removeThought);
 
 router
-    .route('/:thoughtId/:reactions')
+    .route('/:id/:reactions')
     .post(addReaction)
-    .put(addReaction)
+    //.put(addReaction)
     //.delete(removeReaction);
 
 router
-    .route('/:thoughtId/:reactions/:reactionId')
+    .route('/:thoughtId/reactions/:reactionId')
     .delete(removeReactionById);
 
 module.exports = router;
