@@ -37,7 +37,7 @@ router
 
 router
     .route('/:id/:reactions')
-    .post(addReaction)
+    .post(addReaction);
     //.put(addReaction)
     //.delete(removeReaction);
 
