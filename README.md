@@ -56,7 +56,7 @@ tested applications adding console logs. Used Insomnia to test get, posts, put a
 
 ## Questions
 GitHub Username: Lucianne302 
-GitHub Profile Link: https://github.com/Lucianne302/
+GitHub Profile Link:  https://lucianne302.github.io/socialNetworkAPI/
 
 ## Video
 Part 1: https://drive.google.com/file/d/1LA5U8yQrkJc0-rqDTGntlGXzz7glwCmc/view 
