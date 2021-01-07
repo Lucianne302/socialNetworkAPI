@@ -59,3 +59,5 @@ GitHub Username: Lucianne302
 GitHub Profile Link: https://github.com/Lucianne302/
 
 ## Video
+Part 1: https://drive.google.com/file/d/1LA5U8yQrkJc0-rqDTGntlGXzz7glwCmc/view 
+Part 2: https://drive.google.com/file/d/1HvqDgsBunTa1FzbnYzuSgTLmu3a8v9Wc/view 
